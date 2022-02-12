@@ -21,7 +21,7 @@ public class Main {
 
 	private String setDomainName(){
 		
-		System.out.print("Enter a domain name:");
+		System.out.print("Enter a domain name: ");
 		
 		Scanner scanner = new Scanner(System.in);
 		
