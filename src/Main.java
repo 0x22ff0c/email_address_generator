@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class Main {
 
+	String emailName = "";
+	
 	public static void main(String[] args){
 
 		System.out.println("Random email address generator");
@@ -10,6 +12,8 @@ public class Main {
 		Main sampleClass = new Main();
 		
 		String domainName = sampleClass.setDomainName();
+		
+		sampleClass.generateEmailName();
 		
 		sampleClass.generateEmailAddress(domainName);
 		
@@ -29,7 +33,7 @@ public class Main {
 		
 	}
 	
-	private void generateEmailAddress(String domainName){
+	private void generateEmailName(){
 		
 		Random random = new Random();
 		
@@ -47,7 +51,14 @@ public class Main {
 			
 		}
 		
-		System.out.println(String.format("Generated email address: %s", stringBuilder.toString() + "@" + domainName));
+		emailName = stringBuilder.toString();
+		
+		
+	}
+	
+	private void generateEmailAddress(String domainName){
+		
+		System.out.println(String.format("Generated email address: %s", emailName + "@" + domainName));
 		
 	}
 	
