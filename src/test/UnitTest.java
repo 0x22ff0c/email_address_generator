@@ -8,15 +8,17 @@ import main.EmailAddressGenerator;
 
 public class UnitTest {
 
+	EmailAddressGenerator emailAddressGenerator = new EmailAddressGenerator();
+
 	@Test
-	public void testEmailAddress(){
+	public void testIfDomainNameExists(){
 		
-		EmailAddressGenerator emailAddressGenerator = new EmailAddressGenerator();
 		emailAddressGenerator.generateEmailName();
 		
-		assertTrue(emailAddressGenerator.generateEmailAddress("@yahoo.com").contains("@yahoo.com"));
+		String domainName = "@yahoo.com";
+		
+		assertTrue(emailAddressGenerator.generateEmailAddress(domainName).contains(domainName));
 		
 	}
-	
 	
 }
