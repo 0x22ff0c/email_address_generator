@@ -44,10 +44,11 @@ public class EmailAddressGenerator {
 		
 	}
 	
-	public void generateEmailAddress(String domainName){
+	public String generateEmailAddress(String domainName){
 		
 		System.out.println(String.format("Generated email address: %s", emailName + "@" + domainName));
 		
+		return emailName + "@" + domainName;
 	}
 	
 	
