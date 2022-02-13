@@ -21,4 +21,17 @@ public class UnitTest {
 		
 	}
 	
+	@Test
+	public void testIfEmailIsIncorrectFormat(){
+		
+		emailAddressGenerator.generateEmailName();
+		
+		String domainName = "gmail.com";
+		
+		String emailAddress = emailAddressGenerator.generateEmailAddress(domainName);
+		
+		assertTrue(emailAddress.matches("\\s.*@"+domainName));
+		
+	}
+	
 }
