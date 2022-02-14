@@ -8,11 +8,11 @@ public class Main {
 		
 		EmailAddressGenerator emailAddressGenerator = new EmailAddressGenerator();
 		
-		String domainName = emailAddressGenerator.setDomainName();
+		emailAddressGenerator.setDomainName();
 		
 		emailAddressGenerator.generateEmailName();
 		
-		emailAddressGenerator.generateEmailAddress(domainName);
+		emailAddressGenerator.generateEmailAddress();
 		
 	}
 	
