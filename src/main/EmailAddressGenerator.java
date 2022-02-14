@@ -9,6 +9,10 @@ public class EmailAddressGenerator {
 	
 	private String domainName = "";
 	
+	public void setDomainName(String domainName){
+		this.domainName = domainName;
+	}
+	
 	public String setDomainName(){
 		
 		System.out.print("Enter a domain name: ");
