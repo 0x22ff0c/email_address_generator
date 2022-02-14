@@ -8,7 +8,7 @@ public class Main {
 		
 		EmailAddressGenerator emailAddressGenerator = new EmailAddressGenerator();
 		
-		emailAddressGenerator.setDomainName();
+		emailAddressGenerator.promptUserForDomainName();
 		
 		emailAddressGenerator.generateEmailName();
 		

@@ -13,7 +13,7 @@ public class EmailAddressGenerator {
 		this.domainName = domainName;
 	}
 	
-	public String setDomainName(){
+	public String promptUserForDomainName(){
 		
 		System.out.print("Enter a domain name: ");
 		
