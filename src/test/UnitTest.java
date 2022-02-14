@@ -17,6 +17,8 @@ public class UnitTest {
 		
 		String domainName = "@yahoo.com";
 		
+		emailAddressGenerator.setDomainName(domainName);
+
 		assertTrue(emailAddressGenerator.generateEmailAddress().contains(domainName));
 		
 	}
