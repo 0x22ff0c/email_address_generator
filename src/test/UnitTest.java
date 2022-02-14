@@ -30,7 +30,7 @@ public class UnitTest {
 		
 		String emailAddress = emailAddressGenerator.generateEmailAddress(domainName);
 		
-		assertTrue(emailAddress.matches("\\s.*@"+domainName));
+		assertTrue(emailAddress.matches("[0-9|A-Z|a-z].*@" + domainName));
 		
 	}
 	
