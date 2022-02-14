@@ -7,6 +7,8 @@ public class EmailAddressGenerator {
 
 	private String emailName = "";
 	
+	private String domainName = "";
+	
 	public String setDomainName(){
 		
 		System.out.print("Enter a domain name: ");
@@ -16,6 +18,8 @@ public class EmailAddressGenerator {
 		String domainName = scanner.nextLine();
 		
 		scanner.close();
+		
+		this.domainName = domainName;
 		
 		return domainName;
 		
@@ -44,11 +48,12 @@ public class EmailAddressGenerator {
 		
 	}
 	
-	public String generateEmailAddress(String domainName){
+	public String generateEmailAddress(){
 		
 		System.out.println(String.format("Generated email address: %s", emailName + "@" + domainName));
 		
 		return emailName + "@" + domainName;
+		
 	}
 	
 	
