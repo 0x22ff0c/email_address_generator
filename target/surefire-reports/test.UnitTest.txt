@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: test.UnitTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec <<< FAILURE!
+test.UnitTest.testIfDomainNameExists()  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at test.UnitTest.testIfDomainNameExists(UnitTest.java:22)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:387)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 19 more
+
+test.UnitTest.testIfEmailIsIncorrectFormat()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at test.UnitTest.testIfEmailIsIncorrectFormat(UnitTest.java:37)
+
