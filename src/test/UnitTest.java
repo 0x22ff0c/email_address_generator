@@ -17,7 +17,7 @@ public class UnitTest {
 		
 		String domainName = "@yahoo.com";
 		
-		assertTrue(emailAddressGenerator.generateEmailAddress(domainName).contains(domainName));
+		assertTrue(emailAddressGenerator.generateEmailAddress().contains(domainName));
 		
 	}
 	
@@ -28,7 +28,7 @@ public class UnitTest {
 		
 		String domainName = "gmail.com";
 		
-		String emailAddress = emailAddressGenerator.generateEmailAddress(domainName);
+		String emailAddress = emailAddressGenerator.generateEmailAddress();
 		
 		assertTrue(emailAddress.matches("[0-9|A-Z|a-z].*@" + domainName));
 		
