@@ -9,12 +9,18 @@ public class EmailAddressGenerator {
 	
 	private String domainName = "";
 	
+	private int emailNameTotalLength = 0;
+	
 	public void setDomainName(String domainName){
 		this.domainName = domainName;
 	}
 	
 	public String getEmailName(){
 		return emailName;
+	}
+	
+	public void setEmailNameTotalLength(int emailNameTotalLength){
+		this.emailNameTotalLength = emailNameTotalLength;
 	}
 	
 	public String promptUserForDomainName(){
@@ -30,6 +36,20 @@ public class EmailAddressGenerator {
 		this.domainName = domainName;
 		
 		return domainName;
+		
+	}
+	
+	public int promptUserForEmailNameTotalLength(){
+		
+		System.out.print("Enter total length for email name: ");
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		emailNameTotalLength = scanner.nextInt();
+		
+		scanner.close();
+		
+		return emailNameTotalLength;
 		
 	}
 	
