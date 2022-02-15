@@ -41,7 +41,7 @@ public class EmailAddressGenerator {
 		
 		StringBuilder stringBuilder = new StringBuilder();
 		
-		for(int index = 0; index <= 10; index++){
+		for(int index = 0; index < 10; index++){
 			
 			stringBuilder.append(charArray[random.nextInt(charArray.length)]);
 			
