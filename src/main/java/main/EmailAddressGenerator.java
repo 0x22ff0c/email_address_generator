@@ -13,6 +13,10 @@ public class EmailAddressGenerator {
 		this.domainName = domainName;
 	}
 	
+	public String getEmailName(){
+		return emailName;
+	}
+	
 	public String promptUserForDomainName(){
 		
 		System.out.print("Enter a domain name: ");
@@ -48,7 +52,6 @@ public class EmailAddressGenerator {
 		}
 		
 		emailName = stringBuilder.toString();
-		
 		
 	}
 	
