@@ -29,12 +29,10 @@ public class EmailAddressGenerator {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		String domainName = scanner.nextLine();
+		domainName = scanner.nextLine();
 		
 		scanner.close();
-		
-		this.domainName = domainName;
-		
+
 		return domainName;
 		
 	}
