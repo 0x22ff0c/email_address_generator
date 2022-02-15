@@ -1,5 +1,6 @@
 package test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -35,6 +36,17 @@ public class UnitTest {
 		String emailAddress = emailAddressGenerator.generateEmailAddress();
 		
 		assertTrue(emailAddress.matches("[0-9|A-Z|a-z].*@" + domainName));
+		
+	}
+	
+	@Test
+	public void testIfEmailLengthIsCorrect(){
+		
+		emailAddressGenerator.generateEmailName();
+		
+		int totalExpectedNumberOfCharacters = 10;
+		
+		assertEquals(totalExpectedNumberOfCharacters, emailAddressGenerator.getEmailName().length());
 		
 	}
 	
